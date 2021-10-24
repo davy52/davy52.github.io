@@ -20,6 +20,7 @@ function draw() {
   X = x + 100 *  sin(i * 0.025);
   // Moving up at a constant speed
   Y = y + 100 * sin(i * 0.025 + PI/2);
+
   i++; 
   // Reset to the bottom
   if (y < 0) {
