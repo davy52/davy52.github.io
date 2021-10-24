@@ -3,11 +3,5 @@ function setup() {
 }
 
 function draw() {
-/*	if (mouseIsPressed) {
-		fill(0);
-	} else {
-		fill(255);
-	}*/
-	fill(255);
-	ellipse(nouseX, mouseY, 80, 80);
+	rect(100,100,20,20);
 }
