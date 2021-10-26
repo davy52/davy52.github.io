@@ -7,10 +7,10 @@ function setup() {
 	createCanvas(720, 720);
 	strokeWeight(4);
 	g = createVector(0, 100);
-	mi = 1.01;
+	mi = 1;
 	ball = new RigidBall2d(50, 1, g, width/4, height, mi);
 	anchorPos = createVector(width/2, 20);
-	k = 5;
+	k = 0.5;
 	l0 = 300;
 	l = createVector(0, 0);
 }
