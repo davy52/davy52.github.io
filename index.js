@@ -6,11 +6,11 @@ let k, l0, l, g, force, mi;
 function setup() {
 	createCanvas(720, 720);
 	strokeWeight(4);
-	g = createVector(0, 100);
+	g = createVector(0, 300);
 	mi = 1;
 	ball = new RigidBall2d(50, 1, g, width/4, height, mi);
 	anchorPos = createVector(width/2, 20);
-	k = 0.5;
+	k = 2;
 	l0 = 300;
 	l = createVector(0, 0);
 }
@@ -23,5 +23,8 @@ function draw() {
 	ball.applyForce(force);
 	ball.update();
 	line(anchorPos.x, anchorPos.y, ball.Pos().x, ball.Pos().y);
+	if(mouseIsPressed){
+		ball.changePos(createVector(mouseX, mouseY));
+	}
 	ball.show();
 }
