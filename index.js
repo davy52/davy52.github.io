@@ -24,7 +24,9 @@ function draw() {
 	ball.update();
 	line(anchorPos.x, anchorPos.y, ball.Pos().x, ball.Pos().y);
 	if(mouseIsPressed){
-		ball.changePos(createVector(mouseX, mouseY));
+		if(mouseX <= width && mouseY <= height) {
+			ball.changePos(createVector(mouseX, mouseY));
+		}
 	}
 	ball.show();
 }
