@@ -6,12 +6,12 @@ let k, l0, l, g, force, mi;
 function setup() {
 	createCanvas(720, 720);
 	strokeWeight(4);
-	g = createVector(0, 300);
+	g = createVector(0, 500);
 	mi = 1;
 	ball = new RigidBall2d(50, 1, g, width/4, height, mi);
 	anchorPos = createVector(width/2, 20);
 	k = 2;
-	l0 = 300;
+	l0 = 150;
 	l = createVector(0, 0);
 }
 
