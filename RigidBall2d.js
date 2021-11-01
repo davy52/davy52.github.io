@@ -23,9 +23,11 @@ class RigidBall2d {
 
 
 	update() {
+		if(mouseX){
 		this.vel = p5.Vector.add(this.vel, p5.Vector.mult(this.acc, (deltaTime / 1000)));
 		this.pos = p5.Vector.add(this.pos, p5.Vector.mult(this.vel, deltaTime/1000));
 		this.vel = p5.Vector.div(this.vel, this.dampening);
+		}
 	}
 
 	show() {
