@@ -26,7 +26,7 @@ class Character {
 			this.pos.y = 0;
 		}
 
-		if(random(0, 6) <= 1){
+		if(random(0, 10) <= 1){
 			this.setRandomVal();
 		}
 		fill(0, 240, 80);

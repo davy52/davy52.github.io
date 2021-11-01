@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-	background(0, 120);
+	background(0, 200);
 	streams.forEach(stream => {
 		stream.render();	
 	});
